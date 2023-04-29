@@ -18,7 +18,6 @@ setInterval(function () {
 // collision detection start
 var mouse = document.getElementsByClassName('mouseFollower')[0];
 var project = document.getElementsByClassName('project')[0];
-
 setInterval(detectCollision, 100);
 
 function detectCollision() {
@@ -29,7 +28,10 @@ function detectCollision() {
         projectRect.left + projectRect.width > mouseRect.left &&
         projectRect.top < mouseRect.top + mouseRect.height &&
         projectRect.height + projectRect.top > mouseRect.top) {
+            console.log(project);
+
         collided();
+        // mouse.
     } else {
         notCollided();
     }

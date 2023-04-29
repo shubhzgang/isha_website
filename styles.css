@@ -7,7 +7,7 @@ body {
 div,
 section {
   margin: auto;
-  /*border: 1px solid red;*/
+  /* border: 1px solid red; */
   max-width: 800px;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -52,6 +52,7 @@ section {
   transition: width 0.2s ease, height 0.2s ease;
   z-index: 3;
   border: none;
+  pointer-events: none;
 }
 
 
@@ -142,6 +143,11 @@ nav ul li {
   padding: 40px;
   margin: 50px;
   border-radius: 10px;
+  transition: 0.5s;
+}
+
+.project:hover {
+  transform: scale(1.1);
 }
 
 .project img {
@@ -195,6 +201,58 @@ nav ul li {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+}
+
+#blogs {
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: center;
+}
+
+#blogLinks {
+  position: absolute;
+  display: flex;
+  gap: 50px;
+  /* border: 1px solid black; */
+  margin-top: 60px;
+}
+
+#blogLinks a{
+  text-decoration: none;
+}
+
+.blogLink {
+  width: 375px;
+  /* border: 1px solid blue; */
+  height: 500px;
+}
+
+.blogLink img {
+  width: 375px;
+  height: 258px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.blogHeader {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 25px;
+  color:#333333;
+}
+
+.blogInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.blogReadTime, .blogDate {
+  font-weight: 500;
+  font-size: 15px;
+  font-family: sans-serif;
+  color: gray;
 }
 
 ::selection {
