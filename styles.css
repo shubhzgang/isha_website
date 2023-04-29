@@ -207,6 +207,12 @@ nav ul li {
   /* border: 2px solid green; */
   display: flex;
   justify-content: center;
+  margin-top: 75px;
+}
+
+#blogs h4 {
+  font-size: 30px;
+  font-weight: 600;
 }
 
 #blogLinks {
@@ -214,7 +220,7 @@ nav ul li {
   display: flex;
   gap: 50px;
   /* border: 1px solid black; */
-  margin-top: 60px;
+  margin-top: 100px;
 }
 
 #blogLinks a{
@@ -232,6 +238,12 @@ nav ul li {
   height: 258px;
   border-radius: 15px;
   object-fit: cover;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  transition: 0.5s;
+}
+
+.blogLink img:hover {
+  transform: scale(0.95);
 }
 
 .blogHeader {

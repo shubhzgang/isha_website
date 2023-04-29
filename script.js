@@ -7,6 +7,12 @@ $(document).mousemove(function (event) {
     X = event.pageX;
 });
 
+window.onscroll = function() {moveMouseOnScroll()};
+
+function moveMouseOnScroll() {
+    
+}
+
 setInterval(function () {
     moveY += ((Y - moveY) / 15);
     moveX += ((X - moveX) / 15);
