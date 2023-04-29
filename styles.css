@@ -231,6 +231,7 @@ nav ul li {
   width: 375px;
   /* border: 1px solid blue; */
   height: 500px;
+  transition: 0.5s; 
 }
 
 .blogLink img {
@@ -244,6 +245,11 @@ nav ul li {
 
 .blogLink img:hover {
   transform: scale(0.95);
+}
+
+#blogLinks:hover .blogLink:not(:hover) {
+  filter: grayscale(100%);
+  opacity: 0.75;
 }
 
 .blogHeader {
